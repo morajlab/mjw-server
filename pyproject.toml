@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "mjw-server"
+version = "0.1.0"
+description = ""
+authors = ["Morteza Jamali <mortezajamali4241@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.72.0"
+Faker = "^11.3.0"
+uvicorn = "^0.17.0"
+Jinja2 = "^3.0.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+dev = "scripts.run:dev"
