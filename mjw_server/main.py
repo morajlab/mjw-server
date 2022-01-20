@@ -7,9 +7,8 @@ from faker import Faker
 from .path import getRootPath
 
 app = FastAPI()
-faker = Faker()
-templates = Jinja2Templates(directory=path.join(getRootPath(), "templates"))
 app.mount("/public", StaticFiles(directory=path.join(getRootPath(), "public")), name="public")
+templates = Jinja2Templates(directory=path.join(getRootPath(), "templates"))
 
 @app.get("/", response_class=HTMLResponse)
 async def root(request: Request):
@@ -17,4 +16,5 @@ async def root(request: Request):
 
 @app.get("/faker")
 def call_faker():
+  faker = Faker()
   return "fake name ====> %s" % faker.name()
