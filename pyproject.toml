@@ -1,8 +1,29 @@
 [tool.poetry]
 name = "mjw-server"
-version = "0.1.0"
-description = ""
+version = "0.0.1-alpha"
+description = "MJW server"
 authors = ["Morteza Jamali <mortezajamali4241@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://www.morajlab.com/opensource/products/mjw-server"
+repository = "https://github.com/morajlab/mjw-server"
+documentation = "https://github.com/morajlab/mjw-server"
+keywords = [
+  "mjw",
+  "workspace",
+  "manager",
+  "morajlab",
+  "project",
+  "monorepo",
+  "multi-repo",
+  "repository",
+  "server",
+  "python"
+]
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
 
 [tool.poetry.dependencies]
 python = "^3.9"
@@ -17,6 +38,3 @@ pytest = "^5.2"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
-
-[tool.poetry.scripts]
-dev = "scripts.run:dev"
