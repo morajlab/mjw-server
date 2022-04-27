@@ -1,0 +1,28 @@
+{
+  "name": "mjw-server",
+  "version": "0.0.1-alpha",
+  "description": "MJW server",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morajlab/mjw-server.git"
+  },
+  "keywords": [
+    "morajlab",
+    "moraj",
+    "server"
+  ],
+  "author": {
+    "name": "Morteza Jamali",
+    "email": "mortezajamali4241@gmail.com",
+    "url": "https://moraj.ir"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/morajlab/mjw-server/issues"
+  },
+  "homepage": "https://github.com/morajlab/mjw-server#readme",
+  "lint-staged": {
+    "**/*": "prettier -w -u"
+  }
+}
